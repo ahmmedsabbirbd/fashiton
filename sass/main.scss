@@ -1,0 +1,36 @@
+/*************************
+	Base style
+*************************/
+	@import "base"; /* base */
+	@import "extend"; /* extend */
+	@import "mixin"; /* mixin */
+
+	// Container width
+
+	// Color
+	$red: #e84f88;
+	$black: #5b3f61;
+	$bark_black: #919191;
+	
+	// Font
+	$karla: 'Karla', sans-serif;
+	$cbold:  'codebold', sans-serif;
+	$clight:  'codelight', sans-serif;
+
+	// H1 -- h6
+	.bold {
+		font-family: $cbold;
+	}
+
+/*************************
+	header
+*************************/
+
+
+/*************************
+	footer
+*************************/
+ 
+
+
+@import "responsive"; /* Responsive */
