@@ -11,17 +11,61 @@
 		<link rel="stylesheet" type="text/css" href="../style.css"><!-- style -->
 	</head>
 	<body>  
+ 		<section id="asidr">
+			<div class="mobile-menu" style="display: none;">
+				<div class="menu-header">
+					<div class="logo"> 					
+							<button class="sidr-close" name="close-outline" type="button">
+								<span class="bar-menu"></span>
+								<span class="bar-menu"></span>
+								<span class="bar-menu"></span>
+			               </button>
+			           </div>
+				</div>
+
+				<div class="menu">
+					<ul class="navbar-nav ml-auto">
+                		<li><a href="#">TRENDS</a></li>
+                		<li><a href="#">COLLECTIONS</a></li>
+                		<li><a href="#">DESIGNERS</a></li>
+					</ul>
+				</div>
+			</div>
+		</section> <!-- asidr -->
+
+		<section class="search-bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="content text-center">
+							<input type="text" placeholder="Type to search">
+							<a href="#"><i class="fas fa-search"></i></a>
+							<div class="close-btn">
+								<button class="search-close" name="close-outline" type="button">
+									<span class="bar-menu"></span>
+									<span class="bar-menu"></span>
+									<span class="bar-menu"></span>
+				               </button>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</section><!-- search-bar -->
+
+		<div class="show-overly"></div>
 
 		<header class="header">
 			<nav class="navbar navbar-expand navbar-dark">
 				<div class="container-fluid d-flex justify-content-between">
 					<div class="navbar-header">
-		                <div class="header-menu">
-			                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-									<span class="bar-menu"></span>
-									<span class="bar-menu"></span>
-									<span class="bar-menu"></span>
-			                </button>
+		                <div class="navbar-menu">
+		                	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="bar-menu"></span>
+								<span class="bar-menu"></span>
+								<span class="bar-menu"></span>
+		                	</button>
+
 		                	<ul class="list-unstyled text-uppercase">
 		                		<li><a href="#">TRENDS</a></li>
 		                		<li><a href="#">COLLECTIONS</a></li>
@@ -30,10 +74,12 @@
 		                </div>
 		            </div>
 
-					<div class="navbar-body">
-						<a href="#" class="search">SEARCH<i class="fas fa-search"></i></a>
-						<a href="#" class="bucket"><img src="../images/img/bucket.png" alt="bucket"></a>
-						<a href="#" class="user"><img src="../images/img/user.jpg"></a>
+					<div class="show">
+						<ul class="navbar-nav ml-auto">
+							<li><a href="#" class="search-triger">SEARCH<i class="fas fa-search"></i></a></li>
+							<li><a href="#"><img src="../images/img/bucket.png"></a></li>
+							<li><a href="#" class="user"><img src="../images/img/user.jpg"></a></li>
+						</ul>
 					</div>
 				</div>
 			</nav>
