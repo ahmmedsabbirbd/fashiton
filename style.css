@@ -38,9 +38,19 @@ ul {
 }
 
 /* bootstrap-coustom */
+.btn {
+  border-radius: 0px;
+}
 .btn:focus {
   outline: none;
   box-shadow: none;
+}
+
+input[type=text] {
+  border: none;
+}
+input[type=text]:focus {
+  outline: none;
 }
 
 @font-face {
@@ -70,16 +80,192 @@ ul {
 
 /* extend */
 /* mixin */
-.bold {
-  font-family: "codebold", sans-serif;
+.container {
+  max-width: 1204px;
+}
+
+body * {
+  font-family: "Karla", sans-serif;
+}
+
+.header-slider {
+  background-image: url("images/img/hero-bg.jpg");
+}
+
+.bg-1 {
+  background-image: url("images/img/model-1.png");
+}
+
+.bg-2 {
+  background-image: url("images/img/model-2.png");
+}
+
+.bg-3 {
+  background-image: url("images/img/model-3.png");
+}
+
+.bg-4 {
+  background-image: url("images/img/model-4.png");
+}
+
+.bg-5 {
+  background-image: url("images/img/model-5.png");
+}
+
+.bg-6 {
+  background-image: url("images/img/model-6.png");
+}
+
+.bg-7 {
+  background-image: url("images/img/model-7.png");
+}
+
+.bg-8 {
+  background-image: url("images/img/model-8.png");
+}
+
+.bg-9 {
+  background-image: url("images/img/model-9.png");
+}
+
+.bg-9 {
+  background-image: url("images/img/model-9.png");
+}
+
+.bg-10 {
+  background-image: url("images/img/model-10.png");
 }
 
 /*************************
 	header
 *************************/
+.header {
+  padding: 10px 0 11px;
+}
+.header .navbar .navbar-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .navbar .navbar-header .navbar-toggler {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 25px;
+  display: block;
+  border-radius: 0;
+  background: transparent;
+}
+.header .navbar .navbar-header .navbar-toggler span.bar-menu {
+  width: 100%;
+  height: 4px;
+  display: block;
+  transition: 0.5s;
+  border-radius: 0;
+  background-color: #e84f88;
+  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -khtml-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+.header .navbar .navbar-header .navbar-toggler span.bar-menu:nth-child(2) {
+  width: 15px;
+}
+.header .navbar .navbar-header .navbar-toggler span.bar-menu:nth-child(3) {
+  width: 20px;
+}
+.header .navbar .navbar-header .navbar-toggler span.bar-menu:not(:last-child) {
+  margin-bottom: 7px;
+}
+.header .navbar .navbar-header .navbar-toggler:hover span:nth-child(2) {
+  width: 20px;
+}
+.header .navbar .navbar-header .navbar-toggler:hover span:last-child {
+  width: 15px;
+}
+.header .navbar .navbar-header .navbar-toggler:focus {
+  outline: none;
+}
+.header .navbar .navbar-nav {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.header .navbar .navbar-nav li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header .navbar .navbar-nav li a {
+  color: #CB1808;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 /*************************
 	footer
 *************************/
+.footer {
+  padding: 54px 0;
+  margin-top: 34px;
+  background-color: #F4F4F4;
+}
+.footer .wedget {
+  color: #919191;
+}
+.footer .wedget ul li {
+  display: inline;
+}
+.footer .wedget ul li:not(:last-child) {
+  margin-right: 24px;
+}
+.footer .wedget ul li a {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #919191;
+}
+.footer .wedget ul li a:hover {
+  text-decoration: none;
+}
+.footer .wedget p {
+  font-size: 14px;
+}
+.footer .widget-social {
+  float: right;
+}
+.footer .widget-social ul {
+  text-align: right;
+  margin-bottom: 14px;
+}
+.footer .widget-social ul li {
+  display: inline;
+}
+.footer .widget-social ul li:not(:last-child) {
+  margin-right: 24px;
+}
+.footer .widget-social ul li a {
+  color: #897e93;
+  font-size: 15px;
+}
+.footer .widget-social .subscribe input[type=text] {
+  color: #897e93;
+  font-size: 14px;
+  min-width: 253px;
+  max-height: 36px;
+  padding: 13px 25px 8px 19px;
+}
+.footer .widget-social .subscribe input[type=submit] {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: -6px;
+  background: #e84f88;
+  min-width: 123px;
+  max-height: 36px;
+}
+
 /************************* 
 	Media Queries
 *************************/

@@ -36,10 +36,19 @@ ul {
 
 /* bootstrap-coustom */
 .btn {
-	
+	border-radius: 0px;
+
 	&:focus {
 		outline: none;
 		box-shadow: none; 
+	}
+}
+
+input[type="text"] {
+	border: none;
+
+	&:focus {
+		outline: none;
 	}
 }
 

@@ -6,31 +6,208 @@
 	@import "mixin"; /* mixin */
 
 	// Container width
+	.container {
+		max-width: 1204px;
+	}
 
 	// Color
 	$red: #e84f88;
 	$black: #5b3f61;
-	$bark_black: #919191;
+	$dark_black: #919191;
 	
 	// Font
 	$karla: 'Karla', sans-serif;
 	$cbold:  'codebold', sans-serif;
 	$clight:  'codelight', sans-serif;
 
-	// H1 -- h6
-	.bold {
-		font-family: $cbold;
+	// Body
+	body * {
+		font-family: $karla;
 	}
+
+	// background images
+	.header-slider {background-image: url('images/img/hero-bg.jpg');}
+
+	.bg-1 {background-image: url('images/img/model-1.png');}
+	.bg-2 {background-image: url('images/img/model-2.png');}
+	.bg-3 {background-image: url('images/img/model-3.png');}
+	.bg-4 {background-image: url('images/img/model-4.png');}
+	.bg-5 {background-image: url('images/img/model-5.png');}
+	.bg-6 {background-image: url('images/img/model-6.png');}
+	.bg-7 {background-image: url('images/img/model-7.png');}
+	.bg-8 {background-image: url('images/img/model-8.png');}
+	.bg-9 {background-image: url('images/img/model-9.png');}
+	.bg-9 {background-image: url('images/img/model-9.png');}
+	.bg-10 {background-image: url('images/img/model-10.png');}
+
+	 
 
 /*************************
 	header
 *************************/
+.header {
+	padding: 10px 0 11px;
 
+	.navbar {
 
+		.navbar-header {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+
+			.navbar-toggler {
+
+			    border: 0;
+				margin: 0;
+			    padding: 0;
+			    width: 25px;
+			    display: block;
+			    border-radius: 0;
+			    background: transparent;
+
+				span.bar-menu {
+
+			        width: 100%;
+			        height: 4px;
+			        display: block;
+			        transition: 0.5s;
+			        border-radius: 0;
+			        background-color: $red;
+					@include transition(all .3s ease);			        
+
+			        &:nth-child(2){
+			        	width: 15px;
+			        }
+
+			        &:nth-child(3){
+			        	width: 20px;
+			        }
+
+			        &:not(:last-child) {
+
+			        	margin-bottom: 7px;
+			        }
+			    }
+
+			    &:hover { 
+
+		            span:nth-child(2) { 
+		            	width: 20px;
+		            }
+
+		            span:last-child {
+		            	width: 15px;
+		       		} 
+		   		}
+
+		   		&:focus {
+
+			    	outline: none;
+			    }
+			}
+		}
+
+		.navbar-nav {
+
+			margin-left: -10px;
+			margin-right: -10px;
+
+			li {
+
+				padding-left: 10px;
+				padding-right: 10px;
+
+				a {
+
+					color: #CB1808;
+					font-size: 18px;
+					font-weight: 700;
+					line-height: 24px;
+				}
+			}
+		}
+	}
+}
 /*************************
 	footer
 *************************/
- 
+.footer {
+	padding: 54px 0;
+	margin-top: 34px;
+	background-color: #F4F4F4;
+
+	.wedget {
+		color: $dark_black;
+
+		ul {
+
+			li {
+				display: inline;
+
+				&:not(:last-child) {
+					margin-right: 24px;
+				}
+
+				a {
+					font-size: 15px;
+					font-weight: 700;
+					line-height: 27px;
+					color: $dark_black;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+
+		p {
+			font-size: 14px;
+		}
+	}
+
+	.widget-social {
+		float: right;
+
+		ul {
+			text-align: right;
+			margin-bottom: 14px;
+
+			li {
+				display: inline;
+
+				&:not(:last-child) {
+					margin-right: 24px;
+				}
+
+				a {
+					color: #897e93;
+					font-size: 15px;
+				}
+			}
+		}
+
+		.subscribe {
+			input[type="text"] {
+				color: #897e93;
+				font-size: 14px;
+				min-width: 253px;
+				max-height: 36px;
+				padding: 13px 25px 8px 19px;
+			}
+
+			input[type="submit"] {
+				color: white;
+				font-size: 16px;
+				font-weight: 700;
+				margin-top: -6px;
+				background: $red;
+				min-width: 123px;
+				max-height: 36px;
+			}
+		}
+	}
+}
 
 
 @import "responsive"; /* Responsive */
