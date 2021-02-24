@@ -43,7 +43,6 @@ $('documnet').ready(function() {
 
     $('.search-triger').on('click',function(){
         $('.show-overly').addClass('active');
-    })
-
-
+    }) 
+    
 });

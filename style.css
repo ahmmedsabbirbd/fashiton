@@ -161,6 +161,7 @@ body * {
 .search-bar {
   left: 0;
   right: 0;
+  top: -235px;
   z-index: 999;
   margin-top: -228px;
   position: absolute;
@@ -172,6 +173,7 @@ body * {
   -webkit-transition: all 0.4s ease;
 }
 .search-bar.active {
+  top: 0;
   margin-top: 30px;
 }
 .search-bar .content {
