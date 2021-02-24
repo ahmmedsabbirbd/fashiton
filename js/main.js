@@ -45,4 +45,12 @@ $('documnet').ready(function() {
         $('.show-overly').addClass('active');
     }) 
     
+    $('.product-list').isotope({
+      // set itemSelector so .grid-sizer is not used in layout
+      itemSelector: '.single-item',
+      percentPosition: true,
+      masonry: { 
+      }
+    })
+
 });
