@@ -695,6 +695,96 @@ body * {
 }
 
 /*************************
+	trends-area
+*************************/
+.trends-area {
+  margin-bottom: 170px;
+}
+.trends-area .slick-slider .slick-dots {
+  top: 41%;
+  right: -92%;
+  position: absolute;
+}
+.trends-area .slick-slider .slick-dots .slick-active {
+  background: #E84F88;
+  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -khtml-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+.trends-area .slick-slider .slick-dots li {
+  width: 12px;
+  height: 12px;
+  display: block;
+  background: #D3CECE;
+  border-radius: 50px;
+}
+.trends-area .slick-slider .slick-dots li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.trends-area .slick-slider .slick-dots li button:before {
+  content: "";
+}
+.trends-area .slick-slider .col-5 {
+  float: left;
+  display: inline;
+  background-color: #F4F0F0;
+}
+.trends-area .slick-slider .col-5 .trends-bg {
+  height: 490px;
+}
+.trends-area .slick-slider .col-5 .trends-bg .media {
+  left: 50%;
+  bottom: 0;
+  position: absolute;
+  margin-left: -173.3px;
+}
+.trends-area .slick-slider .col-7 {
+  float: right;
+  display: inline;
+  background-color: #F8F5F5;
+}
+.trends-area .slick-slider .col-7 .enty-title {
+  padding: 65px 85px 45px 61px;
+}
+.trends-area .slick-slider .col-7 .enty-title h1 {
+  color: #e84f88;
+  font-size: 36px;
+  line-height: 46px;
+  font-family: "codelight", sans-serif;
+}
+.trends-area .slick-slider .col-7 .enty-title .bold {
+  font-family: "codebold", sans-serif;
+}
+.trends-area .slick-slider .col-7 .enty-title .year {
+  top: 15%;
+  right: 33%;
+  opacity: 0.1;
+  color: #51abc8;
+  font-size: 110px;
+  line-height: 140px;
+  position: absolute;
+  font-family: "codebold", sans-serif;
+}
+.trends-area .slick-slider .col-7 .enty-title .description {
+  color: #786b7a;
+  font-size: 16px;
+  margin-top: 35px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.trends-area .slick-slider .col-7 .enty-title .btn {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 37px;
+  padding: 5px 28px;
+  background: #51ABC8;
+}
+
+/*************************
 	footer
 *************************/
 .footer {
