@@ -1,77 +1,351 @@
 /************************* 
 	Media Queries
-*************************/
-@media only screen and(min-width: 1800px) {
+*************************/ 
+@media only screen and(max-width: 1480px) {
 
 	/*************************
-		Home Style
+		seasons
 	*************************/
-	 
-}/* 1800px */
-
-@media only screen and(max-width: 1800px) {
-
-	/*************************
-		Home Style
-	*************************/
-	 
-}/* 1800px */
-
-@media only screen and(max-width: 1600px) {
-
-	/*************************
-		Home Style
-	*************************/
-	 
-}/* 1600px */
-
-@media only screen and(max-width: 1460px) {
-
-	/*************************
-		Home Style
-	*************************/
-	 
-}/* 1460px */
-
+	.seasons .seasons-list ul li a { 
+	 	font-size: 43px;
+	}
+}/* 1480px and Laptop or Pc */
 @media only screen and(max-width: 1366px) {
 
 	/*************************
-		Home Style
+		seasons
 	*************************/
-	 
-}/* 1366px */
+	.seasons .seasons-list ul li a { 
+	 	font-size: 38px;
+	}
+	/*************************
+		product-area
+	*************************/
+	.product-area {
+	    margin: 110px 0;
+	}
+	/*************************
+		trends-area
+	*************************/
+	.trends-area {
+   	 margin-bottom: 145px;
+	}
+}/* 1366px and Laptop or Pc */
 
 @media only screen and(max-width: 1199px) {
 
 	/*************************
-		Home Style
+		Header
 	*************************/
-	 
-}/* 1199px */
+	.header {
+
+		.navbar {
+
+			.navbar-header {
+
+				.navbar-menu {
+
+					ul {
+		    			display: none;
+		    		}
+				}
+			}
+		}
+	}
+	/*************************
+		seasons
+	*************************/
+	.seasons .seasons-list ul li a { 
+	 	font-size: 28px;
+	}
+	/*************************
+	trends-area
+	*************************/
+	.trends-area { 
+
+		.slick-slider {
+
+			.slick-dots { 
+				right: 0%;
+				top: 100%;
+				margin-top: 20px; 
+
+				li { 
+					display: inline-block;
+				}
+			} 
+
+			.col-xl-7	{ 
+
+				.enty-title {  
+
+					.year { 
+						right: 60%;
+					}  
+				}
+			}
+		}
+	}
+	/*************************
+		footer
+	*************************/
+	.footer {
+
+		.widget {
+			text-align: center;
+		}
+
+		.widget-social {
+			float: none;
+			margin-top: 35px;
+
+			ul {
+    			text-align: center;
+    		}
+		}
+	}
+}/* 1199px and Laptop or Pc */
 
 @media only screen and(max-width: 991px) {
-
 	/*************************
-		Home Style
+		product-area
 	*************************/
-	 
-}/* 991px */
+	.product-area {
+
+		.product-list {
+			margin-bottom: 30px;
+
+			.single-item {
+				width: 25%;
+				margin-bottom: 18px;
+
+				&:nth-child(2) { 
+					width: 73%;
+				} 
+
+				&:nth-child(4){
+					width: 73%;
+				}
+
+				&:nth-child(5){
+					margin-left: 0%;
+				}
+
+				&:nth-child(6){
+				}
+
+				&:nth-child(7){
+					margin-left: 2%;
+				}
+
+				&:nth-child(8){
+					width: 46%;
+					margin-left: -21%;
+				}
+
+				&:nth-child(9){
+					margin-left: 0;
+				}
+
+				&:nth-child(10){ 
+					margin-left: -14%;
+				} 
+			}
+		}
+	}
+	/*************************
+		seasons
+	*************************/
+	.seasons .seasons-list ul {
+
+		li {
+			float: none;
+			height: 230px;
+			width: 100% !important;
+
+			a { 
+			 	font-size: 21px;
+				text-align: center;
+				padding: 100px 0 !important;
+			}
+		}
+	}
+	/*************************
+	trends-area
+	*************************/
+	.trends-area { 
+
+		.slick-slider {  
+
+			.col-xl-7	{ 
+
+				.enty-title {  
+
+					.year { 
+						right: 51%;
+					} 
+				}
+			}
+		}
+	}
+}/* 991px and Medium Device and Tablet */
 
 @media only screen and(max-width: 767px) {
-
-	/*************************
-		Home Style
+ 	/*************************
+		product-area
 	*************************/
-	 
-}/* 767px */
+	.product-area {
+
+		.product-list {
+			margin-bottom: 30px;
+
+			.single-item {
+				margin-bottom: 18px;
+				width: 100% !important;
+
+				&:nth-child(2) { 
+					margin-left: 0%;
+					width: 100% !important;
+				} 
+
+				&:nth-child(4){
+					margin-left: 0%;
+					width: 100% !important;
+				}
+
+				&:nth-child(5){
+					margin-left: 0%;
+					width: 100% !important;
+				}
+
+				&:nth-child(6){
+					margin-left: 0%;
+					width: 100% !important;
+				}
+
+				&:nth-child(7){
+					margin-left: 0%;
+					width: 100% !important;
+				}
+
+				&:nth-child(8){
+					margin-left: 0%;
+					width: 100% !important;
+				}
+
+				&:nth-child(9){
+					margin-left: 0%;
+					width: 100% !important;
+				}
+
+				&:nth-child(10){
+				margin-left: 0%;
+				width: 100% !important;
+				} 
+			}
+		}
+	}
+	/*************************
+		seasons
+	*************************/
+	.seasons .seasons-list {
+
+		ul {
+
+			li {
+				height: 230px;
+
+				a { 
+				 	font-size: 22px;
+					padding-top: 160px;
+				}
+			}
+		}
+	}
+	/*************************
+	trends-area
+	*************************/
+	.trends-area { 
+
+		.slick-slider {  
+
+			.col-xl-7	{ 
+
+				.enty-title { 
+
+					h1 { 
+						font-size: 30px;
+						line-height: 40px;
+					}
+
+					.bold { 
+					}
+
+					.year { 
+						right: 51%;
+						font-size: 85px;
+						line-height: 105px;
+					}
+
+					.description {
+						font-size: 15px;
+						margin-top: 23px;
+						line-height: 28px; 
+					}
+
+					.btn { 
+						margin-top: 30px;
+					}
+				}
+			}
+		}
+	}
+	/*************************
+		footer
+	*************************/
+	.footer {
+
+		.widget {
+
+			ul {
+
+				li {
+
+					a {
+						font-size: 13px;
+						line-height: 24px;
+					}
+				}
+			}
+
+			p {
+				font-size: 12px;
+			}
+		}
+
+		.widget-social {
+
+			.subscribe {
+
+				input {
+					font-size: 12px !important;
+				}
+			}
+		}
+	}
+}/* 767px and Tablet */
 
 @media only screen and(max-width: 680px) {
 
-	/*************************
-		Home Style
-	*************************/
+	.seasons .seasons-list ul li {
+		height: 200px;
+
+		a { 
+			padding: 80px 0 !important;
+		}
+	} 
 	 
-}/* 680px */
+}/* 680px and Smaller Devices and TVs */
 
 @media only screen and(max-width: 575px) {
 
@@ -79,15 +353,19 @@
 		Home Style
 	*************************/
 	 
-}/* 575px */
+}/* 575px and TVs */
 
 @media only screen and(max-width: 480px) {
 
-	/*************************
-		Home Style
-	*************************/
+	.seasons .seasons-list ul li {
+		height: 180px;
+		
+		a { 
+			padding: 70px 0 !important;
+		}
+	} 
 	 
-}/* 480px */
+}/* 480px and Phones  */
 
 @media only screen and(max-width: 380px) {
 
@@ -95,4 +373,4 @@
 		Home Style
 	*************************/
 	 
-}/* 380px */
+}/* 380px and Phones */

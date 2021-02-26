@@ -722,7 +722,7 @@
 			}
 		}
 
-		.col-5 {
+		.col-xl-5 {
 			float: left;
 			display: inline;
 			background-color: #F4F0F0;
@@ -743,7 +743,7 @@
 			}
 		}
 
-		.col-7	{
+		.col-xl-7	{
 			float: right;
 			display: inline;
 			background-color: #F8F5F5;
@@ -802,7 +802,7 @@
 	margin-top: 34px;
 	background-color: #F4F4F4;
 
-	.wedget {
+	.widget {
 		color: $dark_black;
 
 		ul {
@@ -877,4 +877,4 @@
 }
 
 
-@import "responsive"; /* Responsive */
+@import "responsive"; ///* Responsive /*/

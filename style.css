@@ -727,38 +727,38 @@ body * {
 .trends-area .slick-slider .slick-dots li button:before {
   content: "";
 }
-.trends-area .slick-slider .col-5 {
+.trends-area .slick-slider .col-xl-5 {
   float: left;
   display: inline;
   background-color: #F4F0F0;
 }
-.trends-area .slick-slider .col-5 .trends-bg {
+.trends-area .slick-slider .col-xl-5 .trends-bg {
   height: 490px;
 }
-.trends-area .slick-slider .col-5 .trends-bg .media {
+.trends-area .slick-slider .col-xl-5 .trends-bg .media {
   left: 50%;
   bottom: 0;
   position: absolute;
   margin-left: -173.3px;
 }
-.trends-area .slick-slider .col-7 {
+.trends-area .slick-slider .col-xl-7 {
   float: right;
   display: inline;
   background-color: #F8F5F5;
 }
-.trends-area .slick-slider .col-7 .enty-title {
+.trends-area .slick-slider .col-xl-7 .enty-title {
   padding: 65px 85px 45px 61px;
 }
-.trends-area .slick-slider .col-7 .enty-title h1 {
+.trends-area .slick-slider .col-xl-7 .enty-title h1 {
   color: #e84f88;
   font-size: 36px;
   line-height: 46px;
   font-family: "codelight", sans-serif;
 }
-.trends-area .slick-slider .col-7 .enty-title .bold {
+.trends-area .slick-slider .col-xl-7 .enty-title .bold {
   font-family: "codebold", sans-serif;
 }
-.trends-area .slick-slider .col-7 .enty-title .year {
+.trends-area .slick-slider .col-xl-7 .enty-title .year {
   top: 15%;
   right: 33%;
   opacity: 0.1;
@@ -768,14 +768,14 @@ body * {
   position: absolute;
   font-family: "codebold", sans-serif;
 }
-.trends-area .slick-slider .col-7 .enty-title .description {
+.trends-area .slick-slider .col-xl-7 .enty-title .description {
   color: #786b7a;
   font-size: 16px;
   margin-top: 35px;
   font-weight: 400;
   line-height: 30px;
 }
-.trends-area .slick-slider .col-7 .enty-title .btn {
+.trends-area .slick-slider .col-xl-7 .enty-title .btn {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
@@ -792,25 +792,25 @@ body * {
   margin-top: 34px;
   background-color: #F4F4F4;
 }
-.footer .wedget {
+.footer .widget {
   color: #919191;
 }
-.footer .wedget ul li {
+.footer .widget ul li {
   display: inline;
 }
-.footer .wedget ul li:not(:last-child) {
+.footer .widget ul li:not(:last-child) {
   margin-right: 24px;
 }
-.footer .wedget ul li a {
+.footer .widget ul li a {
   font-size: 15px;
   font-weight: 700;
   line-height: 27px;
   color: #919191;
 }
-.footer .wedget ul li a:hover {
+.footer .widget ul li a:hover {
   text-decoration: none;
 }
-.footer .wedget p {
+.footer .widget p {
   font-size: 14px;
 }
 .footer .widget-social {
@@ -850,76 +850,257 @@ body * {
 /************************* 
 	Media Queries
 *************************/
-@media only screen and (min-width: 1800px) {
+@media only screen and (max-width: 1480px) {
   /*************************
-  	Home Style
+  	seasons
   *************************/
+  .seasons .seasons-list ul li a {
+    font-size: 43px;
+  }
 }
-/* 1800px */
-@media only screen and (max-width: 1800px) {
-  /*************************
-  	Home Style
-  *************************/
-}
-/* 1800px */
-@media only screen and (max-width: 1600px) {
-  /*************************
-  	Home Style
-  *************************/
-}
-/* 1600px */
-@media only screen and (max-width: 1460px) {
-  /*************************
-  	Home Style
-  *************************/
-}
-/* 1460px */
+/* 1480px and Laptop or Pc */
 @media only screen and (max-width: 1366px) {
   /*************************
-  	Home Style
+  	seasons
   *************************/
+  .seasons .seasons-list ul li a {
+    font-size: 38px;
+  }
+
+  /*************************
+  	product-area
+  *************************/
+  .product-area {
+    margin: 110px 0;
+  }
+
+  /*************************
+  	trends-area
+  *************************/
+  .trends-area {
+    margin-bottom: 145px;
+  }
 }
-/* 1366px */
+/* 1366px and Laptop or Pc */
 @media only screen and (max-width: 1199px) {
   /*************************
-  	Home Style
+  	Header
   *************************/
+  .header .navbar .navbar-header .navbar-menu ul {
+    display: none;
+  }
+
+  /*************************
+  	seasons
+  *************************/
+  .seasons .seasons-list ul li a {
+    font-size: 28px;
+  }
+
+  /*************************
+  trends-area
+  *************************/
+  .trends-area .slick-slider .slick-dots {
+    right: 0%;
+    top: 100%;
+    margin-top: 20px;
+  }
+  .trends-area .slick-slider .slick-dots li {
+    display: inline-block;
+  }
+  .trends-area .slick-slider .col-xl-7 .enty-title .year {
+    right: 60%;
+  }
+
+  /*************************
+  	footer
+  *************************/
+  .footer .widget {
+    text-align: center;
+  }
+  .footer .widget-social {
+    float: none;
+    margin-top: 35px;
+  }
+  .footer .widget-social ul {
+    text-align: center;
+  }
 }
-/* 1199px */
+/* 1199px and Laptop or Pc */
 @media only screen and (max-width: 991px) {
   /*************************
-  	Home Style
+  	product-area
   *************************/
+  .product-area .product-list {
+    margin-bottom: 30px;
+  }
+  .product-area .product-list .single-item {
+    width: 25%;
+    margin-bottom: 18px;
+  }
+  .product-area .product-list .single-item:nth-child(2) {
+    width: 73%;
+  }
+  .product-area .product-list .single-item:nth-child(4) {
+    width: 73%;
+  }
+  .product-area .product-list .single-item:nth-child(5) {
+    margin-left: 0%;
+  }
+  .product-area .product-list .single-item:nth-child(7) {
+    margin-left: 2%;
+  }
+  .product-area .product-list .single-item:nth-child(8) {
+    width: 46%;
+    margin-left: -21%;
+  }
+  .product-area .product-list .single-item:nth-child(9) {
+    margin-left: 0;
+  }
+  .product-area .product-list .single-item:nth-child(10) {
+    margin-left: -14%;
+  }
+
+  /*************************
+  	seasons
+  *************************/
+  .seasons .seasons-list ul li {
+    float: none;
+    height: 230px;
+    width: 100% !important;
+  }
+  .seasons .seasons-list ul li a {
+    font-size: 21px;
+    text-align: center;
+    padding: 100px 0 !important;
+  }
+
+  /*************************
+  trends-area
+  *************************/
+  .trends-area .slick-slider .col-xl-7 .enty-title .year {
+    right: 51%;
+  }
 }
-/* 991px */
+/* 991px and Medium Device and Tablet */
 @media only screen and (max-width: 767px) {
   /*************************
-  	Home Style
+  	product-area
   *************************/
-}
-/* 767px */
-@media only screen and (max-width: 680px) {
+  .product-area .product-list {
+    margin-bottom: 30px;
+  }
+  .product-area .product-list .single-item {
+    margin-bottom: 18px;
+    width: 100% !important;
+  }
+  .product-area .product-list .single-item:nth-child(2) {
+    margin-left: 0%;
+    width: 100% !important;
+  }
+  .product-area .product-list .single-item:nth-child(4) {
+    margin-left: 0%;
+    width: 100% !important;
+  }
+  .product-area .product-list .single-item:nth-child(5) {
+    margin-left: 0%;
+    width: 100% !important;
+  }
+  .product-area .product-list .single-item:nth-child(6) {
+    margin-left: 0%;
+    width: 100% !important;
+  }
+  .product-area .product-list .single-item:nth-child(7) {
+    margin-left: 0%;
+    width: 100% !important;
+  }
+  .product-area .product-list .single-item:nth-child(8) {
+    margin-left: 0%;
+    width: 100% !important;
+  }
+  .product-area .product-list .single-item:nth-child(9) {
+    margin-left: 0%;
+    width: 100% !important;
+  }
+  .product-area .product-list .single-item:nth-child(10) {
+    margin-left: 0%;
+    width: 100% !important;
+  }
+
   /*************************
-  	Home Style
+  	seasons
   *************************/
+  .seasons .seasons-list ul li {
+    height: 230px;
+  }
+  .seasons .seasons-list ul li a {
+    font-size: 22px;
+    padding-top: 160px;
+  }
+
+  /*************************
+  trends-area
+  *************************/
+  .trends-area .slick-slider .col-xl-7 .enty-title h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .trends-area .slick-slider .col-xl-7 .enty-title .year {
+    right: 51%;
+    font-size: 85px;
+    line-height: 105px;
+  }
+  .trends-area .slick-slider .col-xl-7 .enty-title .description {
+    font-size: 15px;
+    margin-top: 23px;
+    line-height: 28px;
+  }
+  .trends-area .slick-slider .col-xl-7 .enty-title .btn {
+    margin-top: 30px;
+  }
+
+  /*************************
+  	footer
+  *************************/
+  .footer .widget ul li a {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .footer .widget p {
+    font-size: 12px;
+  }
+  .footer .widget-social .subscribe input {
+    font-size: 12px !important;
+  }
 }
-/* 680px */
+/* 767px and Tablet */
+@media only screen and (max-width: 680px) {
+  .seasons .seasons-list ul li {
+    height: 200px;
+  }
+  .seasons .seasons-list ul li a {
+    padding: 80px 0 !important;
+  }
+}
+/* 680px and Smaller Devices and TVs */
 @media only screen and (max-width: 575px) {
   /*************************
   	Home Style
   *************************/
 }
-/* 575px */
+/* 575px and TVs */
 @media only screen and (max-width: 480px) {
-  /*************************
-  	Home Style
-  *************************/
+  .seasons .seasons-list ul li {
+    height: 180px;
+  }
+  .seasons .seasons-list ul li a {
+    padding: 70px 0 !important;
+  }
 }
-/* 480px */
+/* 480px and Phones  */
 @media only screen and (max-width: 380px) {
   /*************************
   	Home Style
   *************************/
 }
-/* 380px */
-/* Responsive */
+/* 380px and Phones */
